@@ -21,9 +21,6 @@ const server = http.createServer(async (req, res) => {
     buffers.push(chunk)
   }
 
-  // { "name": "Franco", "email": "franco@gmail.com" }
-  // { "name": "Franco", "em}
-
   const fullStreamContent = Buffer.concat(buffers).toString()
 
   console.log(fullStreamContent)
